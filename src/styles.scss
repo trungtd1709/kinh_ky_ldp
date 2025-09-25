@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+// Global styles using the variables
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-text: #{$secondary-text};
+    // --font-family-primary: #{$font-family-primary};
+  }
+  
+
+body {
+//   font-family: $font-family-base;
+//   font-size: $font-size-base;
+//   color: $primary-color;
+//   background-color: $primary-color;
+}
+
+// You can add more global styles here

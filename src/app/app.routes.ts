@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   // Redirect root to dashboard or landing page
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // { path: '', redirectTo: '/home', pathMatch: 'full' },
   
   {
     path: 'home',
@@ -29,5 +29,5 @@ export const routes: Routes = [
 //   },
   
   // Wildcard route - must be last
-  { path: '**', redirectTo: '/home' }
+  // { path: '**', redirectTo: '/home' }
 ];

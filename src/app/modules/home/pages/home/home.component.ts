@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { APP_IMAGES } from '../../../../shared/constant/app-images';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  APP_IMAGES = APP_IMAGES;
 }
