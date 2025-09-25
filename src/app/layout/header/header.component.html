@@ -1,0 +1,48 @@
+<header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+          <a routerLink="/" class="nav-logo-link">
+            <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">Your App</span>
+          </a>
+        </div>
+  
+        <!-- Desktop Navigation -->
+        <div class="nav-menu" [class.active]="isMenuOpen">
+          <a routerLink="/home" 
+             routerLinkActive="active" 
+             class="nav-link"
+             (click)="closeMenu()">
+            Home
+          </a>
+          <a routerLink="/dashboard" 
+             routerLinkActive="active" 
+             class="nav-link"
+             (click)="closeMenu()">
+            Dashboard
+          </a>
+          <a routerLink="/profile" 
+             routerLinkActive="active" 
+             class="nav-link"
+             (click)="closeMenu()">
+            Profile
+          </a>
+          <a routerLink="/auth/login" 
+             routerLinkActive="active" 
+             class="nav-link login-btn"
+             (click)="closeMenu()">
+            Login
+          </a>
+        </div>
+  
+        <!-- Mobile Menu Toggle -->
+        <div class="nav-toggle" (click)="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>

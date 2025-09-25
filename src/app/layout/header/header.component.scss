@@ -1,0 +1,115 @@
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    padding: 0 1rem;
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+  }
+  
+  .nav-logo {
+    .nav-logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    
+    .logo-img {
+      height: 40px;
+      width: auto;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    .nav-link {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: #f5f5f5;
+        color: #007bff;
+      }
+      
+      &.active {
+        background-color: #007bff;
+        color: white;
+      }
+      
+      &.login-btn {
+        background-color: #007bff;
+        color: white;
+        
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+  }
+  
+  // Mobile styles
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 64px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+      padding: 2rem 0;
+      
+      &.active {
+        left: 0;
+      }
+      
+      .nav-link {
+        padding: 1rem;
+        display: block;
+        margin: 0.5rem 1rem;
+      }
+    }
+  
+    .nav-toggle {
+      display: flex;
+    }
+  }
