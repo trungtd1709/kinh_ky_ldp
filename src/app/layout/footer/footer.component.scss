@@ -1,5 +1,5 @@
 .footer {
-    background-color: #2c3e50;
+    background-color: var(--primary-color);
     color: #ecf0f1;
     margin-top: auto;
   }
@@ -32,7 +32,7 @@
       .footer-logo-text {
         font-size: 1.5rem;
         font-weight: bold;
-        color: #fff;
+        color: var(--primary-text);
       }
     }
     
@@ -115,7 +115,7 @@
     text-align: center;
     
     .footer-copyright {
-      color: #95a5a6;
+      color: var(--primary-text);
     }
   }
   

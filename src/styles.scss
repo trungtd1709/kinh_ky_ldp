@@ -1,18 +1,16 @@
-@import 'variables';
+// @import 'variables';
 
-// Global styles using the variables
+// :root {
+//     --primary-color: #{$primary-color};
+//     --secondary-text: #{$secondary-text};
+// }
+@import "bootstrap/scss/bootstrap";
+
 :root {
-    --primary-color: #{$primary-color};
-    --secondary-text: #{$secondary-text};
-    // --font-family-primary: #{$font-family-primary};
-  }
-  
-
-body {
-//   font-family: $font-family-base;
-//   font-size: $font-size-base;
-//   color: $primary-color;
-//   background-color: $primary-color;
+    --primary-color: #0c3c32;
+    --primary-text: #f5e3b2;
 }
 
-// You can add more global styles here
+body {
+    margin: 0;
+}

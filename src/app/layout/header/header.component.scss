@@ -1,10 +1,50 @@
-.header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10rem 1rem 1rem 10rem;
+.navbar {
   background-color: var(--primary-color);
-  color: var(--secondary-text);
-  font-size: 20px;
-  font-weight: 600;
+
+  .logo {
+    height: 50px;
+    width: auto; // Maintains aspect ratio
+    max-width: 150px;
+    margin-right: 12px;
+    
+    // Add smooth transitions
+    transition: all 0.3s ease;
+    
+    // Add subtle effects
+    filter: brightness(1.1);
+    border-radius: 8px;
+    
+    // Hover effects
+    &:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+      cursor: pointer;
+    }
+    
+    // Responsive sizing
+    @media (max-width: 768px) {
+      height: 40px;
+      margin-right: 8px;
+    }
+    
+    @media (max-width: 480px) {
+      height: 35px;
+      margin-right: 6px;
+    }
+  }
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary-text) !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .d-flex {
+    margin-top: 1rem;
+  }
 }

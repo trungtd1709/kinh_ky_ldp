@@ -1,0 +1,168 @@
+.custom-carousel {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .carousel-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &.clickable {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  .carousel-image-container {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    padding: 2rem 2rem 1.5rem;
+    text-align: center;
+
+    .carousel-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-description {
+      font-size: 1rem;
+      margin-bottom: 0;
+      line-height: 1.4;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  // Custom navigation arrows
+  :host ::ng-deep .carousel-control-prev,
+  :host ::ng-deep .carousel-control-next {
+    width: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  :host ::ng-deep .carousel-control-next {
+    border-radius: 4px 0 0 4px;
+  }
+
+  // Custom indicators
+  :host ::ng-deep .carousel-indicators {
+    bottom: 20px;
+
+    li {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 4px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      transition: all 0.3s ease;
+
+      &.active {
+        background-color: white;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.no-items-message {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+
+  p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .custom-carousel {
+    .carousel-image-container {
+      height: 250px;
+    }
+
+    .carousel-caption {
+      padding: 1.5rem 1rem 1rem;
+
+      .carousel-title {
+        font-size: 1.2rem;
+      }
+
+      .carousel-description {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-carousel {
+    .carousel-image-container {
+      height: 200px;
+    }
+
+    .carousel-caption {
+      padding: 1rem 0.75rem 0.75rem;
+
+      .carousel-title {
+        font-size: 1rem;
+      }
+
+      .carousel-description {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
