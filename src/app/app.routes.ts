@@ -5,7 +5,7 @@ export const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   
   {
-    path: 'home',
+    path: '',
     loadComponent: () => import('./modules/home/pages/home/home.component').then(c => c.HomeComponent)
   },
   // Auth module routes (lazy loaded)
@@ -29,5 +29,5 @@ export const routes: Routes = [
 //   },
   
   // Wildcard route - must be last
-  // { path: '**', redirectTo: '/home' }
+  { path: '**', redirectTo: '/' }
 ];
