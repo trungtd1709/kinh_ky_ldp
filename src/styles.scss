@@ -1,4 +1,4 @@
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap" as *;
 
 html {
   font-size: 16px;
