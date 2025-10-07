@@ -1,50 +1,56 @@
-<nav class="navbar navbar-expand-lg w-100">
-      <div class="container-fluid d-flex justify-content-center align-items-center">
-         <img [src]="APP_IMAGES.LOGO" alt="Kinh kỳ heritage" class="logo">
-        <a class="navbar-brand" routerLink="/">Kinh Kỳ Heritage - Seasonal Gifts </a>
-        
-        <button 
-          class="navbar-toggler" 
-          type="button" 
-          (click)="isMenuCollapsed = !isMenuCollapsed"
-          [attr.aria-expanded]="!isMenuCollapsed" 
-          aria-controls="navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" id="navbarNav">
-          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-            </li>
-            <li class="nav-item dropdown" ngbDropdown>
-              <a class="nav-link dropdown-toggle" 
-                 ngbDropdownToggle 
-                 role="button" 
-                 id="servicesDropdown">
-                Services
-              </a>
-              <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="servicesDropdown">
-                <li><a class="dropdown-item" routerLink="/services/web">Web Development</a></li>
-                <li><a class="dropdown-item" routerLink="/services/mobile">Mobile Apps</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" routerLink="/services/consulting">Consulting</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
-            </li>
-          </ul> -->
-          
-          <!-- <div class="d-flex">
-            <button class="btn btn-outline-light me-2">Login</button>
-            <button class="btn btn-primary">Sign Up</button>
-          </div> -->
-        </div>
-      </div>
+<header class="header">
+  <div class="header-container">
+    <!-- Logo/Brand -->
+    <div class="brand">
+      <h1>KINH KỲ HERITAGE - SEASONAL GIFTS</h1>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Sản phẩm</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Về chúng tôi</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Liên hệ</a>
+        </li>
+      </ul>
     </nav>
+
+    <!-- Mobile Menu Button -->
+    <button 
+      class="mobile-menu-btn" 
+      (click)="toggleMobileMenu()"
+      [class.active]="isMobileMenuOpen"
+      aria-label="Toggle mobile menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" [class.open]="isMobileMenuOpen">
+    <ul class="mobile-nav-menu">
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link" (click)="closeMobileMenu()">Sản phẩm</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link" (click)="closeMobileMenu()">Về chúng tôi</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link" (click)="closeMobileMenu()">Liên hệ</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div 
+    class="mobile-overlay" 
+    [class.active]="isMobileMenuOpen" 
+    (click)="closeMobileMenu()">
+  </div>
+</header>
