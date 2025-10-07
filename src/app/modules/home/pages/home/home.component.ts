@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { APP_IMAGES } from '../../../../shared/constant/app-images';
 import { CarouselComponent, CarouselItem } from '../../../../shared/components/carousel/carousel.component';
 import { FeaturedProductsComponent, ProductCard } from '../../components/featured-product/featured-product.component';
+import { AboutUsComponent } from '../../components/about-us/about-us.component';
 
 @Component({
   selector: 'app-home',
-  imports: [CarouselComponent, FeaturedProductsComponent],
+  imports: [CarouselComponent, FeaturedProductsComponent, AboutUsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -1,0 +1,23 @@
+<section class="about-section" [style.background-color]="backgroundColor">
+  <div class="container-fluid h-100">
+    <div class="row h-100 g-0" [class.flex-row-reverse]="imagePosition === 'right'">
+      <!-- Image Column -->
+      <div class="col-12 col-lg-6 image-wrapper">
+          <img 
+            [src]="image" 
+            [alt]="mainTitle"
+            class="about-image"
+          />
+      </div>
+
+      <!-- Content Column -->
+      <div class="col-12 col-lg-6 content-column">
+        <div class="content-wrapper">
+          <h3 class="top-title">{{ topTitle }}</h3>
+          <h1 class="main-title">{{ mainTitle }}</h1>
+          <p class="description">{{ description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
