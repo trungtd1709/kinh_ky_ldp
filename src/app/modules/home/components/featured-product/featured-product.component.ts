@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { APP_IMAGES } from '../../../../shared/constant/app-images';
+import { APP_COLORS } from '../../../../shared/constant/app-colors';
 
 export interface ProductCard {
   image: string;
@@ -16,19 +18,19 @@ export interface ProductCard {
 export class FeaturedProductsComponent {
   @Input() sectionTitle: string = 'SẢN PHẨM NỔI BẬT';
   @Input() backgroundColor: string = '#f5f0e8';
-  @Input() titleColor: string = '#2c5f4f';
-  @Input() productTitleColor: string = '#2c5f4f';
+  @Input() backgroundImage: string = APP_IMAGES.BANNER.FEATURED_PROUDCT_BANNER;
+  @Input() productTitleColor: string = APP_COLORS.TEXT.PRIMARY;
   @Input() products: ProductCard[] = [
     {
-      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500',
+      image: APP_IMAGES.FEATURED_PRODUCTS[1],
       title: 'Hộp quà Tết'
     },
     {
-      image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500',
+      image: APP_IMAGES.FEATURED_PRODUCTS[2],
       title: 'Bánh trung thu'
     },
     {
-      image: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=500',
+      image: APP_IMAGES.FEATURED_PRODUCTS[3],
       title: 'Khăn lụa'
     }
   ];

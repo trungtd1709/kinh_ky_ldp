@@ -1,6 +1,9 @@
-<section class="featured-section" [style.background-color]="backgroundColor">
+<section 
+  class="featured-section" 
+  [style.background-image]="'url(' + backgroundImage + ')'"
+>
   <div class="container py-5">
-    <h1 class="section-title text-center mb-5" [style.color]="titleColor">
+    <h1 class="section-title text-center mb-5">
       {{ sectionTitle }}
     </h1>
     
@@ -14,7 +17,7 @@
               class="product-image"
             />
           </div>
-          <h3 class="product-title" [style.color]="productTitleColor">
+          <h3 class="product-title">
             {{ product.title }}
           </h3>
         </div>

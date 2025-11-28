@@ -3,10 +3,11 @@ import { APP_IMAGES } from '../../../../shared/constant/app-images';
 import { CarouselComponent, CarouselItem } from '../../../../shared/components/carousel/carousel.component';
 import { FeaturedProductsComponent, ProductCard } from '../../components/featured-product/featured-product.component';
 import { AboutUsComponent } from '../../components/about-us/about-us.component';
+import { DescriptionKinhKyComponent } from '../../components/description-kinh-ky/description-kinh-ky.component';
 
 @Component({
   selector: 'app-home',
-  imports: [CarouselComponent, FeaturedProductsComponent, AboutUsComponent],
+  imports: [CarouselComponent, FeaturedProductsComponent, AboutUsComponent, DescriptionKinhKyComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -14,13 +15,13 @@ export class HomeComponent {
   APP_IMAGES = APP_IMAGES;
   carouselItems: CarouselItem[] = [
     {
-      imageUrl: APP_IMAGES.BANNER,
+      imageUrl: APP_IMAGES.BANNER.MAIN_BANNER,
       title: 'Kinh kỳ heritage',
       description: 'Discover the beauty of Kinh kỳ heritage',
       link: 'https://example.com'
     },  
      {
-      imageUrl: APP_IMAGES.BANNER,
+      imageUrl: APP_IMAGES.BANNER.MAIN_BANNER,
       title: 'Kinh kỳ heritage',
       description: 'Discover the beauty of Kinh kỳ heritage',
       link: 'https://example.com'

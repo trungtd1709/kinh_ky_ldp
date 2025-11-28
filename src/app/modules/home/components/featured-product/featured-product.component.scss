@@ -1,6 +1,10 @@
-featured-section {
-  min-height: 100vh;
+.featured-section {
+  // min-height: 100vh;
   padding: 2rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .section-title {
@@ -9,6 +13,7 @@ featured-section {
   font-weight: 400;
   letter-spacing: 0.05em;
   margin-bottom: 3rem;
+  color: var(--primary-text);
 }
 
 .product-card {
@@ -23,7 +28,7 @@ featured-section {
     width: 70%;
     aspect-ratio: 1;
     overflow: hidden;
-    border-radius: 20%;
+    border-radius: 15%;
     margin-bottom: 1.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
@@ -52,6 +57,7 @@ featured-section {
     font-weight: 400;
     letter-spacing: 0.02em;
     margin: 0;
+    color: var(--primary-text);
   }
 }
 
