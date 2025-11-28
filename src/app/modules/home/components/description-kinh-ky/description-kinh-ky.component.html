@@ -1,30 +1,23 @@
 <section class="description-section">
   <div class="row g-0">
-    <!-- Left Column - Background Banner -->
       <div 
         class="left-panel col-12 col-lg-8"
         [style.background-image]="'url(' + leftBackgroundImage + ')'"
       >
-        <div class="left-content">
           <h2 class="main-title">{{ mainTitle }}</h2>
-        </div>
       </div>
 
       <div 
         class="right-panel col-12 col-lg-4"
         [style.background-image]="'url(' + rightBackgroundImage + ')'"
       >
-        <div class="content-wrapper">
           <div 
             class="paragraph-block" 
             *ngFor="let paragraph of paragraphs"
           >
-            <h3 *ngIf="paragraph.title" class="paragraph-title">
-              {{ paragraph.title }}
-            </h3>
             <p class="paragraph-content">{{ paragraph.content }}</p>
           </div>
-        </div>
+        
       </div>
     </div>
 </section>
