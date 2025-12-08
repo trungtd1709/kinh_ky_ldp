@@ -9,13 +9,13 @@
     <nav class="desktop-nav">
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="#" class="nav-link">Sản phẩm</a>
+          <a href="#san-pham" class="nav-link" (click)="scrollToSection('san-pham', $event)">Sản phẩm</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Về chúng tôi</a>
+          <a href="#ve-chung-toi" class="nav-link" (click)="scrollToSection('ve-chung-toi', $event)">Về chúng tôi</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Liên hệ</a>
+          <a href="#lien-he" class="nav-link" (click)="scrollToSection('lien-he', $event)">Liên hệ</a>
         </li>
       </ul>
     </nav>
@@ -36,13 +36,13 @@
   <nav class="mobile-nav" [class.open]="isMobileMenuOpen">
     <ul class="mobile-nav-menu">
       <li class="mobile-nav-item">
-        <a href="#" class="mobile-nav-link" (click)="closeMobileMenu()">Sản phẩm</a>
+        <a href="#san-pham" class="mobile-nav-link" (click)="scrollToSection('san-pham', $event)">Sản phẩm</a>
       </li>
       <li class="mobile-nav-item">
-        <a href="#" class="mobile-nav-link" (click)="closeMobileMenu()">Về chúng tôi</a>
+        <a href="#ve-chung-toi" class="mobile-nav-link" (click)="scrollToSection('ve-chung-toi', $event)">Về chúng tôi</a>
       </li>
       <li class="mobile-nav-item">
-        <a href="#" class="mobile-nav-link" (click)="closeMobileMenu()">Liên hệ</a>
+        <a href="#lien-he" class="mobile-nav-link" (click)="scrollToSection('lien-he', $event)">Liên hệ</a>
       </li>
     </ul>
   </nav>
