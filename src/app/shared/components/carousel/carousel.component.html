@@ -1,31 +1,41 @@
-<ngb-carousel 
-  #carousel
-  [interval]="interval"
-  [pauseOnHover]="pauseOnHover"
-  [wrap]="wrap"
-  [keyboard]="keyboard"
-  [showNavigationArrows]="showNavigationArrows"
-  [showNavigationIndicators]="showIndicators"
-  *ngIf="items && items.length > 0"
-  class="custom-carousel">
-  
-  <ng-template ngbSlide *ngFor="let item of items; let i = index">
-    <div class="carousel-slide" [class.clickable]="item.link" (click)="onSlideClick(item)">
-      <div class="carousel-image-container">
-        <img 
-          [src]="item.imageUrl" 
-          [alt]="item.alt || item.title || 'Carousel image ' + (i + 1)"
-          class="carousel-image"
-          loading="lazy">
+<div class="carousel-wrapper">
+  <ngb-carousel 
+    #carousel
+    [interval]="interval"
+    [pauseOnHover]="pauseOnHover"
+    [wrap]="wrap"
+    [keyboard]="keyboard"
+    [showNavigationArrows]="showNavigationArrows"
+    [showNavigationIndicators]="showIndicators"
+    *ngIf="items && items.length > 0"
+    class="custom-carousel">
+    
+    <ng-template ngbSlide *ngFor="let item of items; let i = index">
+      <div class="carousel-slide" [class.clickable]="item.link" (click)="onSlideClick(item)">
+        <div class="carousel-image-container">
+          <img 
+            [src]="item.imageUrl" 
+            [alt]="item.alt || item.title || 'Carousel image ' + (i + 1)"
+            class="carousel-image"
+            loading="lazy">
+        </div>
+        
+        <div class="carousel-caption" *ngIf="item.title || item.description">
+          <h5 *ngIf="item.title" class="carousel-title">{{ item.title }}</h5>
+          <p *ngIf="item.description" class="carousel-description">{{ item.description }}</p>
+        </div>
       </div>
-      
-      <div class="carousel-caption" *ngIf="item.title || item.description">
-        <h5 *ngIf="item.title" class="carousel-title">{{ item.title }}</h5>
-        <p *ngIf="item.description" class="carousel-description">{{ item.description }}</p>
-      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  <!-- Center Overlay Content -->
+  <div class="center-overlay" *ngIf="showOverlay && (overlayTitle || overlaySubtitle)">
+    <div class="overlay-frame">
+      <h1 class="overlay-title" *ngIf="overlayTitle">{{ overlayTitle }}</h1>
+      <p class="overlay-subtitle" *ngIf="overlaySubtitle">"{{ overlaySubtitle }}"</p>
     </div>
-  </ng-template>
-</ngb-carousel>
+  </div>
+</div>
 
 <div *ngIf="!items || items.length === 0" class="no-items-message">
   <p>No carousel items to display</p>

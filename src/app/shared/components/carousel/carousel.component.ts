@@ -24,6 +24,11 @@ export class CarouselComponent {
   @Input() interval: number = 5000; // 5 seconds
   @Input() wrap: boolean = true;
   @Input() keyboard: boolean = true;
+  
+  // Overlay content inputs
+  @Input() overlayTitle: string = '';
+  @Input() overlaySubtitle: string = '';
+  @Input() showOverlay: boolean = false;
 
   onSlideClick(item: CarouselItem): void {
     if (item.link) {

@@ -1,6 +1,9 @@
 <section
   class="contact-section"
-  [style.background-image]="'url(' + backgroundImage + ')'"
+  [ngStyle]="{
+    'background-image': 'url(' + backgroundImage + ')',
+    'background-repeat': 'repeat'
+  }"
 >
   <div class="social-section">
     <h2 class="social-title">{{ socialTitle }}</h2>

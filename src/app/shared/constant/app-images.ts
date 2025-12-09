@@ -1,6 +1,6 @@
 export const APP_IMAGES = {
   BANNER: {
-    MAIN_BANNER:'/images/banner.jpg',
+    MAIN_BANNER:'/images/banner/banner_main.jpg',
     FEATURED_PROUDCT_BANNER: '/images/banner/featured_product_banner.png',
     BANNER_DESCRIPTION_1: '/images/banner/banner_description_1.png',
     BANNER_DESCRIPTION_2: '/images/banner/banner_description_2.png',
