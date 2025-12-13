@@ -12,7 +12,7 @@
 
   // Apply negative margin only on large screens
   @media (min-width: 769px) {
-    top: 30px;
+    top: 40px;
     position: absolute;
     width: 100%;
   }
@@ -29,13 +29,15 @@
   margin: 0 0;
   padding: 0 5rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 70px;
+  position: relative;
 
   @media (max-width: 768px) {
     height: 60px;
     padding: 0 1rem;
+    justify-content: flex-end;
   }
 }
 
@@ -61,9 +63,28 @@
 
 // Desktop Navigation
 .desktop-nav {
+  position: absolute;
+  right: 5rem;
+
   @media (max-width: 768px) {
     display: none;
   }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.logo {
+  height: 110px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-menu {

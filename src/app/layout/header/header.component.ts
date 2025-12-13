@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { APP_IMAGES } from '../../shared/constant/app-images';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   isMobileMenuOpen = false;
+  logoUrl = APP_IMAGES.LOGO;
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
