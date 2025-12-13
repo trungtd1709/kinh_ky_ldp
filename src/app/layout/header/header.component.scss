@@ -10,17 +10,26 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease;
 
+  // Apply negative margin only on large screens
+  @media (min-width: 769px) {
+    top: 30px;
+    position: absolute;
+    width: 100%;
+  }
+
   // &:hover {
   //   background: rgba(44, 62, 45, 0.85);
   // }
+
 }
 
 .header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  // max-width: 1200px;
+  width: 100vw;
+  margin: 0 0;
+  padding: 0 5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 70px;
 
