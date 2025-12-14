@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { APP_IMAGES } from '../../../../shared/constant/app-images';
-import { CarouselComponent, CarouselItem } from '../../../../shared/components/carousel/carousel.component';
 import { FeaturedProductsComponent, ProductCard } from '../../components/featured-product/featured-product.component';
 import { AboutUsComponent } from '../../components/about-us/about-us.component';
 import { DescriptionKinhKyComponent } from '../../components/description-kinh-ky/description-kinh-ky.component';
@@ -8,21 +7,13 @@ import { ContactUsComponent } from '../../components/contact-us/contact-us.compo
 
 @Component({
   selector: 'app-home',
-  imports: [CarouselComponent, FeaturedProductsComponent
+  imports: [FeaturedProductsComponent
     , AboutUsComponent, DescriptionKinhKyComponent, ContactUsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   APP_IMAGES = APP_IMAGES;
-  carouselItems: CarouselItem[] = [
-    {
-      imageUrl: APP_IMAGES.BANNER.MAIN_BANNER,
-      // title: 'Kinh kỳ heritage',
-      // description: 'Discover the beauty of Kinh kỳ heritage',
-      // link: 'https://example.com'
-    },  
-  ];
 
   myProducts: ProductCard[] = [
     {
