@@ -1,11 +1,12 @@
-<section
-  class="contact-section"
-  [ngStyle]="{
-    'background-image': 'url(' + backgroundImage + ')',
-    'background-repeat': 'repeat'
-  }"
->
-  <div class="social-section">
+<section class="contact-section">
+  <div
+    class="social-section"
+    [ngStyle]="{
+      'background-image': 'url(' + backgroundImageFollow + ')',
+      'background-repeat': 'repeat',
+      'background-position': 'center center'
+    }"
+  >
     <h2 class="social-title">{{ socialTitle }}</h2>
     <div class="social-icons">
       <a
@@ -44,27 +45,44 @@
       </a>
     </div>
   </div>
-  <div class="contact-content">
+  <div
+    class="contact-content"
+    [ngStyle]="{
+      'background-image': 'url(' + backgroundImageContact + ')',
+      'background-repeat': 'repeat',
+      'background-position': 'center top'
+    }"
+  >
     <h2 class="contact-title">{{ contactTitle }}</h2>
 
-    <div class="contact-info">
-      <div class="brand-column">
+    <div class="contact-info row">
+      <div
+        class="brand-column col-md-4 d-flex justify-content-start flex-column align-items-center"
+      >
         <h3 class="brand-name">{{ brandName }}</h3>
       </div>
 
-      <div class="address-column">
-        <h4 class="column-label">{{ addressLabel }}</h4>
-        <p class="column-value">{{ address }}</p>
+      <div
+        class="address-column col-md-4 d-flex justify-content-start flex-column align-items-center"
+      >
+        <div class="text-block">
+          <h4 class="column-label">{{ addressLabel }}</h4>
+          <p class="column-value">{{ address }}</p>
+        </div>
       </div>
 
-      <div class="contact-column">
-        <h4 class="column-label">{{ contactLabel }}</h4>
-        <p class="column-value">
-          <a [href]="'mailto:' + email" class="contact-link">{{ email }}</a>
-        </p>
-        <p class="column-value">
-          <a [href]="'tel:' + phone" class="contact-link">{{ phone }}</a>
-        </p>
+      <div
+        class="contact-column col-md-4 d-flex justify-content-start flex-column align-items-center"
+      >
+        <div class="text-block">
+          <h4 class="column-label">{{ contactLabel }}</h4>
+          <p class="column-value">
+            <a [href]="'mailto:' + email" class="contact-link">{{ email }}</a>
+          </p>
+          <p class="column-value">
+            <a [href]="'tel:' + phone" class="contact-link">{{ phone }}</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>

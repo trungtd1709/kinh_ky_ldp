@@ -8,7 +8,8 @@ export const APP_IMAGES = {
     BANNER_DESCRIPTION_4  : '/images/banner/banner_description_4.png',
     BANNER_DESCRIPTION_5  : '/images/banner/banner_description_5.png',
     BANNER_6  : '/images/banner/banner_6.png',
-
+    BANNER_7  : '/images/banner/banner_7.png',
+    BANNER_8  : '/images/banner/banner_8.png',
   },
   LOGO: '/logo.jpg',
   FEATURED_PRODUCTS: {

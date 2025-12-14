@@ -26,4 +26,6 @@ export class ContactUsComponent {
   @Input() email: string = 'seasonalgifts@kinhkyheritage.com';
   @Input() phone: string = '(+84) 835-665-885';
   @Input() backgroundImage: string = APP_IMAGES.BANNER.BANNER_6;
+  @Input() backgroundImageFollow: string = APP_IMAGES.BANNER.BANNER_7;
+  @Input() backgroundImageContact: string = APP_IMAGES.BANNER.BANNER_8;
 }
