@@ -32,9 +32,8 @@
 
 .main-title {
   font-family: "Playfair Display", serif;
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: 400;
-  font-style: italic;
   color: var(--primary-text);
   line-height: 1.4;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -50,7 +49,7 @@
 
 .paragraph-content {
   font-family: "Playfair Display", serif;
-  font-size: clamp(1rem, 2vw, 1.05rem);
+  font-size: clamp(1rem, 2vw, 1.1rem);
   font-style: italic;
   font-weight: 400;
   color: var(--primary-text);
