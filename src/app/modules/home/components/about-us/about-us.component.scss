@@ -85,7 +85,7 @@
   font-weight: 400;
   letter-spacing: 0.1em;
   margin-bottom: 2.5rem;
-  color: #2c3e2d;
+  color: var(--primary-color);
   
   @media (max-width: 991px) {
     font-size: 2rem;
@@ -99,12 +99,12 @@
 }
 
 .main-title {
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   font-weight: 500;
   letter-spacing: 0.05em;
   line-height: 1.4;
   margin-bottom: 2rem;
-  color: #2c3e2d;
+  color: var(--primary-color);
   
   @media (max-width: 575px) {
     margin-bottom: 1.5rem;
@@ -113,9 +113,9 @@
 
 .description {
   font-family: 'Lato', 'Arial', sans-serif;
-  font-size: clamp(15px, 2vw, 18px);
+  font-size: clamp(15px, 2.5vw, 18px);
   line-height: 1.8;
-  color: #3d3d3d;
+  color: var(--primary-color);
   margin: 0 0 1.5rem 0;
   text-align: justify;
   
