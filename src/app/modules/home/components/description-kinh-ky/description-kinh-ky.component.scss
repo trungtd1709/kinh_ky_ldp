@@ -3,6 +3,10 @@
   height: 100vh;
 }
 
+.description-container {
+  height: 100%;
+}
+
 .left-panel{
   background-size: cover;
   background-position: center;
@@ -46,7 +50,7 @@
 
 .paragraph-content {
   font-family: "Playfair Display", serif;
-  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-size: clamp(1rem, 2vw, 1.05rem);
   font-style: italic;
   font-weight: 400;
   color: #ffffff;
@@ -58,8 +62,12 @@
 }
 
 @media (max-width: 991px) {
+  .description-container{
+    height: auto;
+  }
+  
   .description-section {
-    padding: 1rem 0;
+    height: auto ;
   }
 
   .main-title {

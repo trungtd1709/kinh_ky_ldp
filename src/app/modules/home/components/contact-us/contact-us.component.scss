@@ -9,7 +9,7 @@
 }
 
 .social-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.6rem, 2vw, 2.5rem);
   font-weight: 400;
   font-style: italic;
   color: #2c3e2d;
@@ -17,7 +17,7 @@
   letter-spacing: 0.05em;
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    // font-size: 2rem;
     margin-bottom: 2rem;
   }
 }
@@ -87,7 +87,7 @@
   background-repeat: no-repeat;
 
   @media (max-width: 768px) {
-    padding: 3rem 1.5rem;
+    // padding: 3rem 1.5rem;
   }
 }
 
@@ -108,6 +108,12 @@
   // align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    height: auto;
+    margin: 0;
+  }
 }
 
 .contact-title {
@@ -120,7 +126,7 @@
   letter-spacing: 0.05em;
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
   }
 }
@@ -140,9 +146,14 @@
   }
 }
 
-.brand-column {
+.footer-column {
   display: flex;
   align-items: center;
+  color: #e8e2d4;
+  @media (max-width: 768px) {
+    padding: 0 !important;
+    align-items: start;
+  }
 }
 
 .brand-name {
@@ -162,12 +173,7 @@
   @media (max-width: 768px) {
     font-size: 1.1rem;
   }
-}
-
-.address-column,
-.contact-column {
-  color: #e8e2d4;
-}
+}s
 
 .column-label {
   font-size: 1.25rem;

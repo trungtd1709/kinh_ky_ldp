@@ -8,12 +8,11 @@
     </h1>
     
     <div class="row g-4">
-      <div class="col-12 col-md-4" *ngFor="let product of products">
+      <div class="col-12 col-md-4 product-container" *ngFor="let product of products">
         <div class="product-card">
           <div class="image-container">
             <img 
               [src]="product.image" 
-              [alt]="product.title"
               class="product-image"
             />
           </div>

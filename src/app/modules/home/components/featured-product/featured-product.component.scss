@@ -14,7 +14,17 @@
   letter-spacing: 0.05em;
   margin-bottom: 3rem;
   color: var(--primary-text);
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
+
+// .product-container{
+//   @media (max-width: 768px) {
+//     gap: 10px;
+//   }
+// }
 
 .product-card {
   display: flex;
@@ -53,11 +63,15 @@
 
   .product-title {
     font-family: "Playfair Display", serif;
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(1.6rem, 3vw, 1.75rem);
     font-weight: 400;
     letter-spacing: 0.02em;
     margin: 0;
     color: var(--primary-text);
+  }
+
+   @media (max-width: 768px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -69,5 +83,9 @@
   .image-container {
     border-radius: 15px;
     margin-bottom: 1rem;
+  }
+
+  .product-title{
+
   }
 }

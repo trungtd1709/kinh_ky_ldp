@@ -20,18 +20,5 @@ export class FeaturedProductsComponent {
   @Input() backgroundColor: string = '#f5f0e8';
   @Input() backgroundImage: string = APP_IMAGES.BANNER.FEATURED_PROUDCT_BANNER;
   @Input() productTitleColor: string = APP_COLORS.TEXT.PRIMARY;
-  @Input() products: ProductCard[] = [
-    {
-      image: APP_IMAGES.FEATURED_PRODUCTS[1],
-      title: 'Hộp quà Tết'
-    },
-    {
-      image: APP_IMAGES.FEATURED_PRODUCTS[2],
-      title: 'Bánh trung thu'
-    },
-    {
-      image: APP_IMAGES.FEATURED_PRODUCTS[3],
-      title: 'Khăn lụa'
-    }
-  ];
+  @Input() products: ProductCard[] = [];
 }
