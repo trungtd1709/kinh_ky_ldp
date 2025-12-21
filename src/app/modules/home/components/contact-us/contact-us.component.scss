@@ -54,14 +54,13 @@
     }
   }
 
-  &.phone {
+  &.zalo {
     background-color: transparent;
     border: 3px solid var(--primary-color);
-    color: var(--primary-color);
+    padding: 0;
+    overflow: hidden;
 
     &:hover {
-      background-color: var(--primary-color);
-      color: var(--primary-text);
       transform: scale(1.05);
     }
   }
@@ -80,6 +79,12 @@
     width: 30px;
     height: 30px;
   }
+}
+
+.social-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 // Contact Info Section

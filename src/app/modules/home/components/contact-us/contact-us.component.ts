@@ -17,6 +17,7 @@ export class ContactUsComponent {
   @Input() facebookUrl: string = 'https://www.facebook.com/profile.php?id=61580393174781';
   @Input() instagramUrl: string = 'https://instagram.com';
   @Input() zaloUrl: string = 'https://zalo.me/84835665885';
+  zaloImage: string = APP_IMAGES.ZALO;
 
   // Contact section
   @Input() contactTitle: string = 'LIÊN HỆ CHÚNG TÔI';
