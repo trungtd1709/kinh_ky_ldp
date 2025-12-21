@@ -142,6 +142,7 @@
     // grid-template-columns: 1fr;
     // gap: 2rem;
     // text-align: center;
+    gap: 10px;
   }
 }
 
@@ -149,8 +150,10 @@
   display: flex;
   align-items: center;
   color: var(--primary-text);
+
   @media (max-width: 768px) {
     padding: 0 !important;
+    gap: 10px;
     align-items: start;
   }
 }
