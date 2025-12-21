@@ -16,6 +16,7 @@ export class ContactUsComponent {
   @Input() socialTitle: string = 'THEO DÕI CHÚNG TÔI';
   @Input() facebookUrl: string = 'https://www.facebook.com/profile.php?id=61580393174781';
   @Input() instagramUrl: string = 'https://instagram.com';
+  @Input() zaloUrl: string = 'https://zalo.me/84835665885';
 
   // Contact section
   @Input() contactTitle: string = 'LIÊN HỆ CHÚNG TÔI';

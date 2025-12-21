@@ -23,9 +23,11 @@
 }
 
 .social-icons {
+
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 15rem;
+  margin-top: 2rem;
 
   @media (max-width: 768px) {
     gap: 3rem;
@@ -52,7 +54,7 @@
     }
   }
 
-  &.instagram {
+  &.phone {
     background-color: transparent;
     border: 3px solid var(--primary-color);
     color: var(--primary-color);
@@ -159,11 +161,13 @@
 }
 
 .brand-name {
+  padding-top: 2px;
   font-size: 1.25rem;
   font-weight: 400;
   color: var(--primary-text);
   letter-spacing: 0.05em;
   margin: 0;
+  font-family: 'Playfair Display', serif;
 
   @media (max-width: 991px) {
     justify-content: center;
@@ -189,11 +193,12 @@
 }
 
 .column-value {
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: 'SVN-Gotham', sans-serif;
   font-size: 0.95rem;
+  font-weight: 350;
   line-height: 1.6;
   margin: 0 0 0.5rem 0;
-  color: rgba(232, 226, 212, 0.9);
+  color: var(--primary-text);
 
   &:last-child {
     margin-bottom: 0;
@@ -201,7 +206,7 @@
 }
 
 .contact-link {
-  color: rgba(232, 226, 212, 0.9);
+  color: var(--primary-text);
   text-decoration: none;
   transition: color 0.3s ease;
 
