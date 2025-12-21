@@ -12,6 +12,7 @@ import { APP_IMAGES } from '../../shared/constant/app-images';
 export class HeaderComponent {
   isMobileMenuOpen = false;
   logoUrl = APP_IMAGES.LOGO;
+  navbarBg = APP_IMAGES.NAVBAR_BG;
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;

@@ -1,5 +1,10 @@
-<header class="header">
+<header class="header" [style.background-image]="'url(' + navbarBg + ')'">
   <div class="header-container">
+    <!-- Mobile Logo/Title -->
+    <div class="mobile-logo-container">
+      <img [src]="logoUrl" alt="Logo" class="mobile-logo" />
+    </div>
+
     <!-- Desktop Navigation -->
     <nav class="desktop-nav">
       <ul class="nav-menu">

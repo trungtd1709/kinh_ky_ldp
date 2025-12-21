@@ -12,6 +12,7 @@ export const APP_IMAGES = {
     BANNER_8  : '/images/banner/banner_8.png',
   },
   LOGO: '/logo.jpg',
+  NAVBAR_BG: '/images/navbar_bg.jpg',
   FEATURED_PRODUCTS: {
     1: '/images/featured_products/1.png',
     2: '/images/featured_products/2.png',
