@@ -1,6 +1,7 @@
 .description-section {
   width: 100%;
-  height: 100vh;
+  // height: fit-content;
+  min-height: 100vh;
 }
 
 .description-container {
@@ -37,17 +38,7 @@
   color: var(--primary-text);
   line-height: 1.4;
   letter-spacing: 2px;
-  // display: inline-block;
-  // text-align: center;
   text-wrap: balance;
-}
-
-.right-panel {
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
 }
 
 .paragraph-content {
@@ -87,11 +78,6 @@
   .left-panel,
   .right-panel {
     min-height: 60vh;
-  }
-
-  .left-panel .left-content,
-  .right-panel .content-wrapper {
-    padding: 2rem;
   }
 }
 

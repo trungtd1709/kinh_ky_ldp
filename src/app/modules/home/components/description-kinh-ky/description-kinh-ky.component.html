@@ -1,23 +1,19 @@
 <section class="description-section">
   <div class="row g-0 description-container">
-      <div 
-        class="left-panel col-12 col-lg-8"
-        [style.background-image]="'url(' + leftBackgroundImage + ')'"
-      >
-          <h2 class="main-title">{{ mainTitle }}</h2>
-      </div>
+    <div
+      class="left-panel col-12 col-lg-8"
+      [style.background-image]="'url(' + leftBackgroundImage + ')'"
+    >
+      <h2 class="main-title">{{ mainTitle }}</h2>
+    </div>
 
-      <div 
-        class="right-panel col-12 col-lg-4"
-        [style.background-image]="'url(' + rightBackgroundImage + ')'"
-      >
-          <div 
-            class="paragraph-block" 
-            *ngFor="let paragraph of paragraphs"
-          >
-            <p class="paragraph-content">{{ paragraph.content }}</p>
-          </div>
-        
+    <div
+      class="right-panel col-12 col-lg-4"
+      [style.background-image]="'url(' + rightBackgroundImage + ')'"
+    >
+      <div class="paragraph-block" *ngFor="let paragraph of paragraphs">
+        <p class="paragraph-content">{{ paragraph.content }}</p>
       </div>
     </div>
+  </div>
 </section>
