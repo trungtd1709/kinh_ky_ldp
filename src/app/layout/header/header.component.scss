@@ -29,6 +29,18 @@
     width: 100%;
   }
 
+  // Remove background image on mobile
+  @media (max-width: 768px) {
+    background-image: none !important;
+    background-color: var(--primary-color);
+    // background: linear-gradient(
+    //   to bottom,
+    //   rgba(13, 43, 29, 0.95) 0%,
+    //   rgba(30, 70, 50, 0.95) 50%,
+    //   rgba(13, 43, 29, 0.95) 100%
+    // );
+  }
+
   // &:hover {
   //   background: linear-gradient(
   //     to bottom,
