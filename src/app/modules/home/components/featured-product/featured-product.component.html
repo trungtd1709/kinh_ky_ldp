@@ -2,13 +2,13 @@
   class="featured-section" 
   [style.background-image]="'url(' + backgroundImage + ')'"
 >
-  <div class="container py-5">
-    <h1 class="section-title text-center mb-5">
+  <div class="container py-md-5 py-3">
+    <h1 class="section-title text-center">
       {{ sectionTitle }}
     </h1>
     
-    <div class="row g-4">
-      <div class="col-12 col-md-4 product-container" *ngFor="let product of products">
+    <div class="row g-md-4 g-3">
+      <div class="col-12 col-md-4" *ngFor="let product of products">
         <div class="product-card">
           <div class="image-container">
             <img 
