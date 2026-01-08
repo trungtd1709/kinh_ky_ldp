@@ -36,6 +36,11 @@
     padding-left: 1rem;
     padding-right: 1rem;
     color: var(--primary-color);
+
+    @media (max-width: 768px) {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
     
     .overlay-content {
       text-align: center;
@@ -57,6 +62,7 @@
         
         @media (max-width: 768px) {
           font-size: 1.4rem;
+          margin: 0 0 0.5rem 0;
         }
       }
       
@@ -76,7 +82,7 @@
       }
       
       @media (max-width: 768px) {
-        padding: 1.5rem;
+        padding: 0.5rem;
       }
     }
   }
