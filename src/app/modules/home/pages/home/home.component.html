@@ -12,28 +12,12 @@
 </div>
 <app-featured-products
       appScrollAnimate
-      animationClass="fade-in-up"
-      animationDelay="0ms"
       id="san-pham"
       [sectionTitle]="'SẢN PHẨM NỔI BẬT'"
       [backgroundColor]="'#f5f0e8'"
       [productTitleColor]="'#2c5f4f'"
       [products]="myProducts">
     </app-featured-products>
-    <app-description-kinh-ky 
-      appScrollAnimate
-      animationClass="fade-in-up"
-      animationDelay="0ms">
-    </app-description-kinh-ky>
-    <app-about-us 
-      appScrollAnimate
-      animationClass="fade-in-up"
-      animationDelay="0ms"
-      id="ve-chung-toi">
-    </app-about-us>
-    <app-contact-us 
-      appScrollAnimate
-      animationClass="fade-in-up"
-      animationDelay="0ms"
-      id="lien-he">
-    </app-contact-us>
+    <app-description-kinh-ky appScrollAnimate></app-description-kinh-ky>
+    <app-about-us appScrollAnimate id="ve-chung-toi"></app-about-us>
+    <app-contact-us appScrollAnimate id="lien-he"></app-contact-us>
