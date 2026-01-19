@@ -15,3 +15,72 @@ body {
     margin: 0;
     font-family: 'Playfair Display', serif;
 }
+
+// Scroll animation styles
+.scroll-animate {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+  &.animated {
+    opacity: 1;
+  }
+
+  // Fade in up animation
+  &.fade-in-up {
+    transform: translateY(40px);
+
+    &.animated {
+      transform: translateY(0);
+    }
+  }
+
+  // Fade in left animation
+  &.fade-in-left {
+    transform: translateX(-40px);
+
+    &.animated {
+      transform: translateX(0);
+    }
+  }
+
+  // Fade in right animation
+  &.fade-in-right {
+    transform: translateX(40px);
+
+    &.animated {
+      transform: translateX(0);
+    }
+  }
+
+  // Fade in scale animation
+  &.fade-in-scale {
+    transform: scale(0.95);
+
+    &.animated {
+      transform: scale(1);
+    }
+  }
+
+  // Simple fade animation
+  &.fade-in {
+    &.animated {
+      opacity: 1;
+    }
+  }
+}
+
+// Initial load animation for banner
+.banner-animate {
+  animation: bannerFadeIn 1.2s ease-out forwards;
+}
+
+@keyframes bannerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
